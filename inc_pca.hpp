@@ -17,6 +17,7 @@ public:
   void partialFit(Eigen::MatrixXd X);
   Eigen::MatrixXd transform(Eigen::MatrixXd const &X);
   Eigen::MatrixXd getComponents();
+  Eigen::ArrayXd getMeans();
   Eigen::MatrixXd getLoadings();
   double getUncertV(unsigned int const nObtainedFeatures);
 

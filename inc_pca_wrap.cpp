@@ -18,5 +18,7 @@ PYBIND11_MODULE(inc_pca_cpp, m) {
       .def("geom_trans", &IncPCA::geomTrans)
       .def("pos_est", &IncPCA::posEst)
       .def("get_uncert_v", &IncPCA::getUncertV)
+      .def("getComponents",&IncPCA::getComponents)
+      .def("getMeans",&IncPCA::getMeans)
       .def("update_uncert_weight", &IncPCA::updateUncertWeight);
 }

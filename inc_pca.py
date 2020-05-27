@@ -238,6 +238,12 @@ class IncPCA(inc_pca_cpp.IncPCA):
             Returns the instance itself.
         """
         return super().partial_fit(X)
+    def getComponents(self):
+        return super().getComponents()
+
+    def getMeans(self):
+        return super().getMeans()
+
 
     def transform(self, X):
         """Obtaining transformed result Y with X and current PCs.

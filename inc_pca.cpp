@@ -209,6 +209,7 @@ Eigen::MatrixXd IncPCA::transform(Eigen::MatrixXd const &X) {
 }
 
 Eigen::MatrixXd IncPCA::getComponents() { return components_.transpose(); }
+Eigen::ArrayXd IncPCA::getMeans(){ return mean_; }
 
 Eigen::MatrixXd IncPCA::getLoadings() {
   Eigen::MatrixXd result(components_.rows(), components_.cols());
